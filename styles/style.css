@@ -116,14 +116,36 @@ h2 {
 /* Header styling */
 
 header {
+  position: fixed;
   display: flex;
   align-items: center;
   justify-content: space-between;
   padding: 1.5rem;
+  background-color: white;
+  width: 100%;
 }
 
 .header_menu {
   display: none;
+}
+
+.header_menu a {
+  text-decoration: none;
+  text-transform: uppercase;
+  color: white;
+  text-align: center;
+  font-weight: var(--fw-bold);
+  font-size: 1.375rem;
+}
+
+.header_menu_plans {
+  border: 2px solid white;
+  padding: .625rem 0;
+  margin-top: -.375rem;
+}
+
+#menuIcon:hover {
+  cursor: pointer;
 }
 
 /* Main section styling */
@@ -134,10 +156,11 @@ header {
     url("../images/bg-pattern-intro-right-mobile.svg");
   background-repeat: no-repeat, no-repeat;
   background-position: center center, center center;
-  background-position-x: 0, 100%;
-  background-position-y: 28.25rem, 141%;
+  background-position-x: 0rem, 99%;
+  background-position-y: 28rem, 50rem;
   color: var(--Very-Light-Gray);
   text-align: center;
+  padding-bottom: 0.9375rem;
 }
 
 .main_heading img {
@@ -152,6 +175,7 @@ header {
 
 .main_heading_text h1 {
   line-height: 3rem;
+  margin-bottom: -.25rem;
 }
 
 .main_heading_text p {
@@ -183,21 +207,22 @@ button.plans {
 
 .main_about {
   display: grid;
-  gap: 4.375rem;
+  gap: 4.4375rem;
   text-align: center;
   place-content: center;
-  padding: 7rem 2rem;
+  padding: 6.25rem 2rem;
   background: white url("../images/bg-pattern-intro-right-mobile.svg") no-repeat;
   background-position-x: 100%;
   background-position-y: -16%;
 }
 
 .h2_border {
+  display: inline;
   height: 0;
   width: 50%;
-  border-top: 1px solid darkviolet;
+  border-top: 1px solid rgba(90, 1, 128, 0.295);
   margin: auto;
-  transform: translateY(2.25rem);
+  transform: translateY(2.5rem);
 }
 
 .main_about h3 {
@@ -228,10 +253,10 @@ button.plans {
   background-position-x: 100%;
   color: white;
   text-align: center;
-  padding: 4.25rem 1.125rem;
+  padding: 4rem 1.125rem;
   width: 88%;
   margin: auto;
-  margin-top: 2.25rem;
+  margin-top: 3rem;
   line-height: 2.5625rem;
 }
 
@@ -253,7 +278,7 @@ footer {
   place-items: center;
   background-color: var(--Very-Light-Gray);
   margin-top: 8.5rem;
-  padding-top: 5.75rem;
+  padding-top: 6.25rem;
 }
 
 .social_icons {
@@ -323,7 +348,8 @@ footer {
 
 @media screen and (min-width: 60em) {
   header {
-    padding: 1.5rem 10.5rem;
+    padding: 1.25rem 10.5rem;
+    position: relative;
   }
 
   .main_heading {
@@ -333,6 +359,28 @@ footer {
     padding: 0 9rem;
     place-items: center;
     height: 37.5rem;
+  }
+
+  .header_menu {
+    display: flex !important;
+    align-items: center;
+    gap: 2rem;
+  }
+
+  .header_menu a {
+    color: var(--Dark-Grayish-Violet);
+    font-size: .875rem;
+  }
+
+  .header_menu_plans {
+    padding: unset;
+    border: 1px solid black;
+    padding: .5rem 2rem;
+    margin-top: unset;
+  }
+
+  #menuIcon {
+    display: none;
   }
 
   picture {
@@ -370,7 +418,7 @@ footer {
   }
 
   .main_about {
-    padding: 17.5rem 10.0625rem 7.6875rem 10.0625rem;
+    padding: 17.5rem 10.0625rem 7.25rem 10.0625rem;
   }
 
   .main_about h2 {
@@ -386,7 +434,7 @@ footer {
   .about_bloc {
     place-items: center start;
     text-align: left;
-    gap: 2.25rem;
+    gap: 2.125rem;
   }
 
   .findout {
@@ -394,7 +442,7 @@ footer {
     justify-content: space-between;
     align-items: center;
     width: 69rem;
-    padding: 4.5rem;
+    padding: 4.3125rem;
     text-align: left;
   }
 
@@ -414,7 +462,7 @@ footer {
       "three three"
       "four four"
       "five five";
-    padding: 4.5rem 10.375rem;
+    padding: 4.75rem 10.375rem;
   }
 
   .footer_header {
@@ -430,7 +478,7 @@ footer {
   .line_decoration {
     grid-area: three;
     width: 69.4375rem;
-    padding-bottom: 0.75rem;
+    padding-bottom: 0.5rem;
     transform: translateY(-1rem);
   }
 
@@ -454,4 +502,25 @@ footer {
   .attribution {
     grid-area: five;
   }
+}
+
+/* JavaScripts Classes */
+
+.header_menu_display {
+  position: fixed;
+  background: var(--Very-Dark-Violet) url('../images/bg-pattern-mobile-nav.svg') no-repeat;
+  background-position-y: 25rem;
+  background-size: contain;
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+  top: 5rem;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  padding: 2.75rem 1.5625rem;
+}
+
+.hide {
+  display: none;
 }
