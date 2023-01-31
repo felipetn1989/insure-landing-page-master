@@ -319,7 +319,7 @@ footer {
 
   picture {
     grid-area: one;
-    transform: translate(-.375rem,6.5rem);
+    transform: translate(-0.375rem, 6.5rem);
   }
 
   .main_heading_decoration {
@@ -343,5 +343,97 @@ footer {
 
   .plans {
     place-self: center start;
+  }
+
+  .h2_border {
+    margin: unset;
+    width: 9.5rem;
+    transform: translateY(1.5rem);
+  }
+
+  .main_about {
+    padding: 17.5rem 10.0625rem 7.6875rem 10.0625rem;
+  }
+
+  .main_about h2 {
+    text-align: left;
+    font-size: 4.25rem;
+  }
+
+  .main_about_blocs {
+    grid-template-columns: repeat(3, 1fr);
+    gap: 1.3125rem;
+  }
+
+  .about_bloc {
+    place-items: center start;
+    text-align: left;
+    gap: 2.25rem;
+  }
+
+  .findout {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 69rem;
+    padding: 4.5rem;
+    text-align: left;
+  }
+
+  .findout h2 {
+    font-size: 3.5rem;
+    width: 54%;
+    line-height: 3.4375rem;
+  }
+
+  button.how {
+    margin-top: unset;
+  }
+
+  footer {
+    grid-template-areas:
+      "one two"
+      "three three"
+      "four four"
+      "five five";
+    padding: 4.5rem 10.375rem;
+  }
+
+  .footer_header {
+    grid-area: one;
+    place-self: center start;
+  }
+
+  .social_icons {
+    grid-area: two;
+    place-self: center end;
+  }
+
+  .line_decoration {
+    grid-area: three;
+    width: 69.4375rem;
+    padding-bottom: 0.75rem;
+    transform: translateY(-1rem);
+  }
+
+  .footer_menu {
+    grid-area: four;
+    columns: 4;
+    column-gap: 9.8125rem;
+    place-self: center start;
+    padding-top: unset;
+  }
+
+  .footer_menu_heading {
+    margin-bottom: 1.5rem;
+    text-align: left;
+  }
+
+  .footer_menu_sub {
+    text-align: left;
+  }
+
+  .attribution {
+    grid-area: five;
   }
 }
