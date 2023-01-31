@@ -168,6 +168,13 @@ header {
   place-self: center;
 }
 
+.button:hover {
+  cursor: pointer;
+  background-color: white;
+  color: var(--Dark-Violet);
+  font-weight: var(--fw-bold);
+}
+
 button.plans {
   margin-top: 1.125rem;
 }
@@ -254,6 +261,11 @@ footer {
   gap: 1rem;
 }
 
+.social_icons img:hover {
+  cursor: pointer;
+  filter: brightness(0%);
+}
+
 .line_decoration {
   width: 87.4%;
   padding-top: 0.4375rem;
@@ -291,6 +303,12 @@ footer {
   text-align: center;
   letter-spacing: 0.0625rem;
   line-height: 1.875rem;
+  color: var(--Dark-Violet);
+}
+
+.footer_menu_sub:hover {
+  cursor: pointer;
+  text-decoration: underline;
 }
 
 .attribution {
