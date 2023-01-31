@@ -180,7 +180,7 @@ button.plans {
   text-align: center;
   place-content: center;
   padding: 6.5625rem 2rem;
-  background: white url('../images/bg-pattern-intro-right-mobile.svg') no-repeat;
+  background: white url("../images/bg-pattern-intro-right-mobile.svg") no-repeat;
   background-position-x: 100%;
   background-position-y: -16%;
 }
@@ -216,8 +216,9 @@ button.plans {
 /* Find out section styling */
 
 .findout {
-background: var(--Dark-Violet) url('../images/bg-pattern-how-we-work-mobile.svg') no-repeat;
-background-position-x: 100%;
+  background: var(--Dark-Violet)
+    url("../images/bg-pattern-how-we-work-mobile.svg") no-repeat;
+  background-position-x: 100%;
   color: white;
   text-align: center;
   padding: 4.5rem 1.125rem;
@@ -298,4 +299,49 @@ footer {
 }
 .attribution a {
   color: hsl(228, 45%, 44%);
+}
+
+/* Media query for desktops */
+
+@media screen and (min-width: 60em) {
+  header {
+    padding: 1.5rem 10.5rem;
+  }
+
+  .main_heading {
+    display: grid;
+    grid-template-areas: "two one";
+    grid-template-columns: 1fr 1fr;
+    padding: 0 9rem;
+    place-items: center;
+    height: 37.5rem;
+  }
+
+  picture {
+    grid-area: one;
+    transform: translate(-.375rem,6.5rem);
+  }
+
+  .main_heading_decoration {
+    width: 9.125rem;
+    border-top: 1px solid white;
+    transform: translateY(-4.5rem);
+  }
+
+  .main_heading_text {
+    text-align: left;
+    grid-area: two;
+  }
+
+  .main_heading_text h1 {
+    font-size: 4.1875rem;
+    line-height: 4rem;
+    margin-bottom: 0.5rem;
+    margin-top: -9rem;
+    padding-top: 7.5625rem;
+  }
+
+  .plans {
+    place-self: center start;
+  }
 }
