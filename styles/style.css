@@ -145,7 +145,7 @@ header {
 }
 
 .main_heading_text {
-  padding: 5.75rem 1.5rem;
+  padding: 5rem 1.5rem;
   display: grid;
   gap: 1rem;
 }
@@ -179,7 +179,7 @@ button.plans {
   gap: 4.375rem;
   text-align: center;
   place-content: center;
-  padding: 6.5625rem 2rem;
+  padding: 7rem 2rem;
   background: white url("../images/bg-pattern-intro-right-mobile.svg") no-repeat;
   background-position-x: 100%;
   background-position-y: -16%;
@@ -221,7 +221,7 @@ button.plans {
   background-position-x: 100%;
   color: white;
   text-align: center;
-  padding: 4.5rem 1.125rem;
+  padding: 4.25rem 1.125rem;
   width: 88%;
   margin: auto;
   margin-top: 2.25rem;
